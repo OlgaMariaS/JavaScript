@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+   
+    <head>
+        <meta charset="utf-8">
+         <title>EXERCICIO</title>
+    </head>
+    <body>
+       <script>
+           var vendas=parseFloat(prompt('Valor da venda'));
+
+           if (vendas>0) {
+               if (vendas>=100.000) {
+                   var comissao1=((vendas*16)/100)+700;
+                   alert('Comissao de '+comissao1);
+               }
+               if (vendas>=80.000 && vendas<100.000) {
+                   var comissao2=((vendas*14)/100)+650;
+                   alert('Comissao de '+comissao2);
+               }
+               if (vendas>=60.000 && vendas<80.000) {
+                   var comissao3=((vendas*14)/100)+600;
+                   alert('Comissao de '+comissao3);
+               }
+               if (vendas>=40.000 && vendas<60.000) {
+                   var comissao4=((vendas*14)/100)+550;
+                   alert('Comissao de '+comissao4);
+               }
+               if (vendas>=20.000 && vendas<40.000) {
+                   var comissao5=((vendas*14)/100)+500;
+                   alert('Comissao de '+comissao5);
+               }
+               if (vendas<20.000) {
+                   var comissao6=((vendas*14)/100)+400;
+                   alert('Comissao de '+comissao6);
+               }
+           } else {
+               alert('Comisao nula');
+           }
+       </script>
+    </body>
+</html>

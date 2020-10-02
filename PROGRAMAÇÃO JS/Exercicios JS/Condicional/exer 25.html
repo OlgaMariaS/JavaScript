@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO 25</title>
+</head>
+
+<body>
+    <script>
+        alert("Calculo de raizes de equação de 2°");
+        var a = parseFloat(prompt('Digite o valor de A'));
+        var b = parseFloat(prompt('Digite o valor de B'));
+        var c = parseFloat(prompt('Digite o valor de C'));
+
+        var delta = Math.pow(b, 2) - 4 * a * (c);
+        alert(delta);
+
+        if (a != 0) {
+
+            if (delta < 0) {
+                alert('Não existe raiz');
+            }
+            if (delta == 0) {
+                var x = (-b + Math.sqrt(delta)) / 2 * a;
+                alert('Raiz unica' + "x=" + x);
+            }
+            if (delta > 0) {
+                var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+                alert("x1=" + x1);
+                alert("x2=" + x2);
+            }
+        } else {
+            alert('Equação invalida');
+
+        }
+    </script>
+</body>
+
+</html>

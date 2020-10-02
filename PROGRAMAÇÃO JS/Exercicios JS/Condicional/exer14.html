@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>execicio 14</title>
+</head>
+
+<body>
+    <script>
+        var trabLaboratorio = parseFloat(prompt('Nota da primeira prova'));
+        var avaliacao = parseFloat(prompt('Nota da segunda prova'));
+        var exame = parseFloat(prompt('Nota da terceira prova'));
+
+        var pesoLab = 2;
+        var pesoAvaliacao = 3;
+        var pesoExame = 5;
+
+        var soma = pesoLab + pesoAvaliacao + pesoExame;
+
+        var ponderada = ((trabLaboratorio * pesoLab ) + (avaliacao * pesoAvaliacao) + (exame * pesoExame)) / soma;
+        alert(ponderada);
+
+        if (ponderada > 0 && ponderada < 2.9) {
+
+            alert('reprovado');
+
+            if (ponderada > 3.0 && ponderada < 4.0) {
+
+                alert('Recuperaçao');
+            }
+        } else {
+            alert('aprovado');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO</title>
+</head>
+
+<body>
+    <script>
+        var dia = parseInt(prompt('Digite o dia'));
+        var mes = parseInt(prompt('Digite o mes'));
+        var ano = parseInt(prompt('Digite o ano'));
+
+
+        if (dia > 0) {
+            if (mes >= 1 && mes <= 12) {
+                if (ano % 4 == 0 && mes == 2) {
+                    if (dia >= 1 && dia <= 29) {
+                        alert('Datas validas');
+                    }  
+                    else {
+                      alert('Data invalida');
+                }
+                }
+                if (ano % 4 != 0 && mes == 2) {
+                    if (dia >= 1 && dia <= 28) {
+                        alert('Datas validas');
+                    }
+                }
+                if (mes != 2) {
+                    if (dia >= 1 && dia <= 31) {
+                        alert('Data valida');
+                    }
+                }
+            }
+
+        } else {
+                      alert('Data invalida');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>execicio</title>
+</head>
+
+<body>
+    <script>
+        var operacoes = prompt('Escolha uma +(adição) -(subtração) /(divisão) * (multiplicação) ');
+        var numero1 = parseFloat(prompt('Digite um numero'));
+        var numero2 = parseFloat(prompt('Digite outro numero'));
+
+        switch (operacoes) {
+            case "+":
+                alert(numero1 + numero2);
+                break;
+            case "-":
+                alert(numero1 - numero2);
+                break;
+
+            case "/":
+                alert(numero1 / numero2);
+                break;
+            case "*":
+                alert(numero1 * numero2);
+                break;
+
+            default:
+                alert('Opçao ou numero invalidos');
+                break;
+        }
+    </script>
+</body>
+
+</html>

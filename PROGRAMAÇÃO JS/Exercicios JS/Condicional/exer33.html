@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO</title>
+</head>
+
+<body>
+    <script>
+        var preco = parseFloat(prompt('Valor antigo'));
+
+
+        if (preco > 0) {
+            if (preco <= 50) {
+                var aumentoCinco = ((preco * 5) / 100) + preco;
+                alert('Percentual de 5%' + aumentoCinco);
+                if (aumentoCinco<=80) {
+                    alert('Barato');
+                }
+            }
+            if (preco > 50 && preco <= 100) {
+                var aumentoDez = ((preco * 10) / 100) + preco;
+                alert('Percentual de 10%' + aumentoDez);
+                if (aumentoDez<=80) {
+                    alert('Barato');
+                }
+                if (aumentoDez>80 && aumentoDez<=120) {
+                    alert('Normal');
+                }
+            }
+            if (preco > 100) {
+                var aumentoQuinze = ((preco * 15) / 100) + preco;
+                alert('Percentual de 15%' + aumentoQuinze);
+                if (aumentoQuinze>=120 && aumentoQuinze<=200) {
+                    alert('Caro');
+                }
+                if (aumentoQuinze>200) {
+                    alert('Muito caro');
+                }
+            }
+        } else {
+            alert('Valor errado');
+        }
+
+    </script>
+</body>
+
+</html>

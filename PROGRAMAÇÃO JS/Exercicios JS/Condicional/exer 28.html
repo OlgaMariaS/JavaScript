@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO 28</title>
+</head>
+
+<body>
+    <script>
+        var numero1 = parseFloat(prompt('Digite um numero'));
+        var numero2 = parseFloat(prompt('Digite outro numero'));
+        var numero3 = parseFloat(prompt('Digite só mais um numero'));
+
+        alert('Escolha uma media a seguir');
+        var escolha = prompt('A-Geometrica B-Ponderada C-Harmonica D-Aritimetica');
+
+        switch (escolha) {
+            case 'A':
+                var geometrica = Math.cbrt((numero1 * numero2 * numero3));
+                alert("resultado da geometrica" + geometrica);
+                break;
+
+            case 'B':
+                var ponderada = (numero1 + (numero2 * 2) + (numero3 * 3)) / 6
+                alert("resultado da ponderada" + ponderada);
+                break;
+
+            case 'C':
+                var harmonica = ((1/numero1)+(1/numero2)+(1/numero3))/1;
+                alert("resultado da ponderada" + harmonica);
+                break;
+
+            case 'D':
+                var aritimetica = (numero1 +numero2+numero3) / 3;
+                alert("resultado da ponderada" + aritimetica);
+                break;
+
+            default:
+                alert('Opção errada');
+                break;
+        }
+    </script>
+</body>
+
+</html>

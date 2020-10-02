@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO 37</title>
+</head>
+
+<body>
+    <script>
+        var chegada = parseInt(prompt('Horas de chegada'));
+
+        var partida = parseInt(prompt('Horas de partida'));
+
+        var pagar = partida - chegada;
+
+
+        if (pagar > 0 || pagar < 0) {
+            if (pagar >= 1 && pagar <= 2) {
+                alert('Pagar' + (pagar * 1));
+            }
+            if (pagar >= 3 && pagar <= 4) {
+                alert('Pagar' + (pagar * 1.40));
+            }
+            if (pagar >= 5) {
+                alert('Pagar' + (pagar * 2));
+            }
+            if (partida <= chegada) {
+                var horario = (24-(chegada-partida))*2;
+                alert('Pagar' + horario);
+            }
+        } else {
+            alert('Pagamento nulo');
+        }
+
+
+    </script>
+</body>
+
+</html>

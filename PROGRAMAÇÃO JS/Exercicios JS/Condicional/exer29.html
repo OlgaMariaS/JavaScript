@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO</title>
+</head>
+
+<body>
+    <script>
+        var x = alert(Math.floor(Math.random() * (100 + 1)));
+        var y = alert(Math.floor(Math.random() * (100 + 1)));
+
+        var resposta = parseInt(prompt('Escreva o resultado da soma dos numeros mostrados'))
+
+        var pergunta1 = prompt('Qual antecessor de 48?');
+        var pergunta2 = prompt('Capital do Brasil?');
+        var pergunta3 = prompt('Nome da moeda brasileira?');
+        var pergunta4 = prompt('Primeira  mulher presidente do Brasil?');
+        var pergunta5 = prompt('sucessor de 55');
+         
+        var pontos = 0;
+
+        if (resposta > 0) {
+            if (pergunta1 == '47') {
+                alert('Antecessor de 48 é 47');
+                pontos++;
+            }
+            if (pergunta2 == 'brasilia') {
+                alert('Capital do Brasil e´brasilia');
+                pontos++;
+            }
+            if (pergunta3 == 'real') {
+                alert('Moeda brasileira é o real');
+                pontos++;
+            }
+            if (pergunta4 == 'Dilma') {
+                alert('Primeira presidente do BR é a Dilma');
+                pontos++;
+            }
+            if (pergunta5 == '56') {
+                alert('Sucessor de 55 é 56');
+                pontos++;
+            }
+        } else {
+            alert('Dados errados');
+        }
+         
+         alert('Total de pontos'+pontos);
+    </script>
+</body>
+
+</html>

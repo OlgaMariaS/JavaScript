@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO 24</title>
+</head>
+
+<body>
+    <script>
+        var preco = parseFloat(prompt('Valor do produto'));
+        var estado = prompt("Digite a sigla do estado em maiusculo");
+
+        switch (estado) {
+            case "MS":
+                var impostoMS = (preco * 8) / 100;
+
+                alert("Valor total do produto no estado de MS" + (impostoMS + preco));
+                break;
+
+            case "RJ":
+                var impostoRJ = (preco * 15) / 100;
+
+                alert("Valor total do produto no estado de MS" + (impostoRJ + preco));
+                break;
+
+            case "MG":
+                var impostoMG = (preco * 7) / 100;
+
+                alert("Valor total do produto no estado de MS" + (impostoMG + preco));
+                break;
+
+            case "SP":
+                var impostoSP = (preco * 12) / 100;
+
+                alert("Valor total do produto no estado de MS" + (impostoSP + preco));
+                break;
+
+
+            default:
+
+                alert('Estado invalido');
+                break;
+        }
+    </script>
+</body>
+
+</html>

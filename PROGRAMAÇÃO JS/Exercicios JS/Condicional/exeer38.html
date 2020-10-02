@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO</title>
+</head>
+
+<body>
+    <script>
+        alert('Ver se sua data de nascimento é valida');
+
+        var dia = parseInt(prompt('Digite o dia'));
+        var mes = parseInt(prompt('Digite o mes'));
+        var ano = parseInt(prompt('Digite o ano'));
+
+        if (ano < 2019) {
+            if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+                if (dia > 0 && dia < 32) {
+                    alert('Data valida');
+                }
+            }
+            if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
+                if (dia > 0 && dia < 31) {
+                    alert('Data valida');
+                }
+            }
+            if (ano % 4 == 0 && mes == 2 && dia > 0 && dia < 30) {
+                alert('data valida');
+            }
+            if (ano % 4 != 0 && mes == 2 && dia > 0 && dia < 29) {
+                alert('data valida');
+            }
+        } else {
+            alert('Data Invalida');
+        }
+    </script>
+</body>
+
+</html>

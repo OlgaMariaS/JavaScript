@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO</title>
+</head>
+
+<body>
+    <script>
+        var nota = parseFloat(prompt('Nota do aluno'));
+        var faltas = parseInt(prompt('Numeros de faltas'));
+
+        if (nota >= 0) {
+            if (nota >= 9.0 && nota <= 10.0) {
+                  if (faltas <= 20) {
+                    alert('A');
+                  }
+                  if (faltas > 20) {
+                    alert('B');
+                  }
+                }
+
+            if (nota >= 7.5 && nota <= 8.9) {
+                   if (faltas <= 20) {
+                    alert('B');
+                   }
+                   if (faltas > 20) {
+                    alert('C');
+                   }
+                }
+
+             if (nota >= 5.0 && nota <= 7.4) {
+                    if (faltas <= 20) {
+                        alert('C');
+                    }
+                    if (faltas > 20) {
+                        alert('D');
+                    }
+                }
+
+             if (nota>=4.0 && nota<=4.9) {
+                     if (faltas<=20) {
+                    alert('D');
+                    }
+                     if (faltas>20) {
+                    alert('E');
+                    }
+                }
+
+            if (nota>=0.0 && nota<=3.9) {
+                    if (faltas<=20) {
+                    alert('E');
+                    }
+                    if (faltas>20) {
+                    alert('F');
+                    }
+                }
+            } else {
+                alert('nota ou faltas erradas');
+            }
+    </script>
+</body>
+
+</html>

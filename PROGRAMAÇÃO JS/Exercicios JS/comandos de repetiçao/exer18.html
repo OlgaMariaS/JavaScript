@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Comando de repetição</title>
+</head>
+
+<body>
+    <script>
+        var quantidade = parseInt(prompt('Digite a quantidade de vezes que deseja escrever '));
+
+        var n = parseInt(prompt('Digite um numeros '));
+
+        var contador = 0;
+
+        for (i = 1; i < quantidade; i++) {
+            var maior = n;
+
+            n = parseInt(prompt('Digite um numero '));
+
+            if (n > maior) {
+                maior = n;
+
+                contador += 1;
+            }
+        }
+
+        alert("Maiornumero" + maior);
+        alert("Quantas  vzs ele foi lido" + "" + contador)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<HTML lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>COMANDO DE REPETIÇÃO</title>
+    </head>
+    <body>
+        <script>
+            var numero = 0;
+            var maior = 0;
+            var menor = 0;
+
+            var numero1 = parseFloat(prompt('Digite um numero'));
+
+            menor = numero1
+
+            for (i = 0; i < 9; i++) {
+                
+                numero = parseFloat(prompt('Digite um numero'));
+                
+                if (numero > maior ) {
+                    
+                    maior = numero;
+
+                }
+                    if (numero <= menor) {
+
+                        menor = numero;
+
+                    }
+
+                } 
+                    alert("Maior numero" + "</br>" + maior);
+                    alert("Menor numero" + "</br>" + menor);
+        </script>
+    </body>
+</HTML>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio 51</title>
+</head>
+
+<body>
+    <script>
+        var cordenada1X = parseFloat(prompt("digite a cordenada x do primeiro ponto"));
+        var cordenada1Y = parseFloat(prompt("digite a cordenada y do primeiro ponto"));
+
+        var cordenada2X = parseFloat(prompt("digite a cordenada x do segundo ponto"));
+        var cordenada2Y = parseFloat(prompt("digite a cordenada y do segundo ponto"));
+
+        var calculo1=Math.pow(cordenada2X-cordenada1X,2);
+        var calculo2=Math.pow(cordenada2Y-cordenada1Y,2);
+
+
+        var distancia = Math.sqrt(calculo1+calculo2);
+
+
+        alert('Distancia de origem'+distancia);
+    </script>
+</body>
+
+</html>

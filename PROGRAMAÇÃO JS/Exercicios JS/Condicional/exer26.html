@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICIO 26</title>
+</head>
+
+<body>
+    <script>
+        var km = parseFloat(prompt('Distancia percorrida em km'));
+        var litros = parseFloat(prompt('Litros consumidos'));
+
+        var consumo = km / litros;
+
+        if (consumo>0) {
+
+            if (consumo < 8) {
+                alert('Venda o carro');
+            }
+            if (consumo >= 8 && consumo <= 14) {
+                alert('Economico');
+            }
+            if (consumo > 12) {
+                alert('Super economico');
+            }
+        }else {
+                alert('Dados errados');
+        }
+    </script>
+</body>
+
+</html>
